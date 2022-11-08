@@ -31,7 +31,7 @@ while game_running_flag:
         break
 
     # Running game mechanics.
-    game_display.fill(game_characteristics{"sky"}"{color"})
+    game_display.fill(game_characteristics{"sky"}{"color"})
 
     pygame.display.update()
 
