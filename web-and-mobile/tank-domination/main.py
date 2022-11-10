@@ -75,13 +75,13 @@ while game_running_flag:
     # Create player and computer
     game_tank_sprite_player = game_tank_sprite
 
-    game_display.blit(game_tank_sprite_player, {game_characteristics["player"]["position"]["x"], 
-    game_characteristics["grass"]["position"]["y"] - game_tank_sprite_player.get_height()})
+    game_display.blit(game_tank_sprite_player, (game_characteristics["player"]["position"]["x"], 
+    game_characteristics["grass"]["position"]["y"] - game_tank_sprite_player.get_height()))
 
     game_tank_sprite_cpu = pygame.transform.flip(game_tank_sprite, True, False)
 
-    game_display.blit(game_tank_sprite_cpu, {game_characteristics["cpu"]["position"]["x"], 
-    game_characteristics["grass"]["position"]["y"] - game_tank_sprite_cpu.get_height()})
+    game_display.blit(game_tank_sprite_cpu, (game_characteristics["cpu"]["position"]["x"], 
+    game_characteristics["grass"]["position"]["y"] - game_tank_sprite_cpu.get_height()))
 
     # running game mechanics
     pygame.display.update()
